@@ -1,0 +1,206 @@
+/* Does Bahnschrift font work with non-Windows computers? */
+@import url(https://fonts.googleapis.com/css?family=Raleway);
+html {
+    height: 100%;
+}
+body {
+    font-family: Bahnschrift;
+    font-weight: lighter;
+    
+    margin: 0;
+    /* Gross and dirty way to fix the bug that causes a sliver of pixels to the right (causing horizontal scroll bar to appear) */
+    /* overflow-x: hidden; */
+}
+@media only screen and (min-width: 1281px) {
+
+}
+.background {
+    /* Weird aspect rations ruin this img */
+    position: fixed;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    z-index: -1;
+}
+nav {
+    position: fixed;
+    left: 0;
+    top: 0;
+    width: 100%;
+}
+nav > p {
+    font-size: 3vh;
+    right: 4vw;
+    /* Next 5 lines center "HocoHacks" in the nav */
+    margin: 0;
+    position: absolute;
+    top: 50%;
+    -ms-transform: translateY(-50%);
+    transform: translateY(-50%);
+}
+nav > ul {
+    display: inline-block;
+    list-style-type: none;
+    padding: 0vh 3vw;
+}
+nav > ul > li {
+    border: 1px solid transparent;
+    border-radius: 1vh;
+    float: left;
+    padding: 1vh 1.2vw;
+    margin: 0;
+}
+nav > ul > li:hover {
+    border-radius: 1.5vh;
+    -webkit-transition-duration: 1s;
+    -o-transition-duration: 1s;
+    transition-duration: 1s;
+}
+nav > ul > li > a {
+    font-size: 2.2vh;
+    text-decoration: none;
+}
+.navTransparent {
+    -webkit-transition-duration: 0.5s;
+    -o-transition-duration: 0.5s;
+    transition-duration: 0.5s;
+    background-color: transparent;
+}
+.navTransparent > ul > li:hover {
+    border: 1px solid black;
+}
+.navTransparent > ul > li > a {
+    -webkit-transition-duration: 0.5s;
+    -o-transition-duration: 0.5s;
+    transition-duration: 0.5s;
+    color: black;
+}
+.navTransparent > p {
+    -webkit-transition-duration: 0.5s;
+    -o-transition-duration: 0.5s;
+    transition-duration: 0.5s;
+    color: black;
+}
+.navColor {
+    -webkit-transition-duration: 0.5s;
+    -o-transition-duration: 0.5s;
+    transition-duration: 0.5s;
+    background-color: #4f4f4f;
+}
+.navColor > ul > li:hover {
+    border: 1px solid white;
+}
+.navColor > ul > li > a {
+    -webkit-transition-duration: 0.5s;
+    -o-transition-duration: 0.5s;
+    transition-duration: 0.5s;
+    color: white;
+}
+.navColor > p {
+    -webkit-transition-duration: 0.5s;
+    -o-transition-duration: 0.5s;
+    transition-duration: 0.5s;
+    color: white;
+}
+header {
+    height: 100vh;
+    /* ... This is not important but I just want anyone reading this to know:
+    I spent like an hour trying to figure out why there was a sliver of extra space next to the body.........
+    and it was me using vw instead of % on this single property. */
+    width: 100%;
+}
+header > img {
+    /* Annoyingly arbitrary positioning */
+    width: 35%;
+    margin-top: 9%;
+    margin-left: 18%;
+}
+header > p {
+    /* Also arbitrary*/
+    float: right;
+    width: 40%;
+    font-size: 4.5vh;
+    margin-top: 19.5%;
+    margin-right: 5%;
+}
+/* Copy-pasta from old C10 HAX site */
+.body-container {
+    background-color: white;
+    display: flex;
+    flex-direction: column;
+}
+.body-container > div {
+    padding: 0% 10% 5%;
+}
+h1 {
+    text-align: center;
+    font-family: Raleway;
+    font-size: 5vh;
+    padding-top: 10%;
+}
+p {
+    font-size: 3vh;
+}
+table {
+    margin: auto;
+    font-family: 'Raleway';
+    font-size: 1.15vw;
+    border-collapse: collapse;
+    width: 100%;
+}
+td, th {
+    border: 1px solid #dddddd;
+    text-align: left;
+    padding: .5vw;
+}
+tr:nth-child(even) {
+    background-color: #dddddd;
+}
+.faq {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+.faq > h1 {
+    width: 100%;
+}
+.faq > div {
+    font-size: 1.5vw;
+    padding: 1vw;
+    width: 29%;
+}
+.faq > div > p {
+    font-size: 1.25vw;
+}
+.sponsors {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+.sponsors > h1 {
+    width: 100%;
+}
+.sponsors > div {
+    padding: 1vw;
+    width: 30%;
+}
+.team {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+.team > h1 {
+    width: 100%;
+}
+.team > div {
+    font-size: 1.5vw;
+    padding: 1vw;
+    width: 21%;
+}
+.team > div > img {
+    border-radius: 50%;
+    padding: 1vw;
+}
+.team > div > p {
+    font-size: 1.25vw;
+}
