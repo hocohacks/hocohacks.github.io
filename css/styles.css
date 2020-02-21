@@ -204,6 +204,14 @@ body {
         width: auto; 
         height: 15vh;
     }
+    .linode {
+        width: auto;
+        height: 30vh;
+    }
+    .no-starch-foundation {
+        width: auto;
+        height: 40vh;
+    }
     .team {
         display: flex;
         flex-wrap: wrap;
@@ -395,6 +403,14 @@ body {
     .jet-brains {
         width: auto; 
         height: 15vh;
+    }
+    .linode {
+        width: auto;
+        height: 20vh;
+    }
+    .no-starch-foundation {
+        width: auto;
+        height: 40vh;
     }
     .team {
         display: flex;
