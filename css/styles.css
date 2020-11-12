@@ -320,6 +320,13 @@ tr:nth-child(even) {
     height: auto;
     width: 100%;
 }
+
+.scale-img{
+  height: 70%;
+  width: 70%;
+  padding-left: 7rem;
+}
+
 .schedule   {
     width: 100%;
     text-align: center;
@@ -460,6 +467,9 @@ tr, th, td  {
     .sponsors img   {
         width: 100%;
     }
+    .scale-img{
+      padding-left: 0;
+    }
 }
 @media only screen and (max-width : 767px){
     nav {
@@ -567,5 +577,8 @@ tr, th, td  {
     }
     .sponsors img   {
         width: 100%;
+    }
+    .scale-img{
+      padding-left: 0;
     }
 }
