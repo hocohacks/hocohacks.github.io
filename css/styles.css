@@ -28,6 +28,31 @@ html,body {
     width: 100%;
     z-index: -1;
 }
+
+.register-button {
+  background-color: #34495e;
+  border: none;
+  color: white;
+  padding: 18px 36px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 30px;
+  margin: 4px 2px;
+  cursor: pointer;
+  border-radius: 12px;
+}
+
+.button {
+    /* Weird aspect rations ruin this img */
+    font-family: 'Monserrat', sans-serif;
+    position: fixed;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    z-index: -1;
+}
+
 nav {
     position: fixed;
     left: 0;
